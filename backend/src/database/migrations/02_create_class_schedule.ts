@@ -4,7 +4,7 @@ export async function up(knex: knex) {
     return knex.schema.createTable('class_schedule', table => {
         table.increments('id').primary();
 
-        table.integer('weel_day').notNullable();
+        table.integer('week_day').notNullable();
         table.integer('from').notNullable();
         table.integer('to').notNullable();
 
